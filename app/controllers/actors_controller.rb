@@ -25,7 +25,7 @@ class ActorsController < ApplicationController
 
     @actor.save
 
-    redirect_to "/actors"
+    redirect_to "/actors/" + @actor.id
   end
 
   def edit_form
@@ -44,7 +44,7 @@ class ActorsController < ApplicationController
 
     @actor.save
 
-    redirect_to "/actors"
+    redirect_to "/actors/" + @actor.id
   end
 
   def destroy

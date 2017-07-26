@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
 
     @movie.save
 
-    redirect_to "/movies"
+    redirect_to "/movies/" + @movie.id
   end
 
   def edit_form
@@ -40,7 +40,7 @@ class MoviesController < ApplicationController
     
     @movie.save
 
-    redirect_to "/movies"
+    redirect_to "/movies/" + @movie.id
   end
 
   def destroy
