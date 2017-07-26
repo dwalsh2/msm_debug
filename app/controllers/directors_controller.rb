@@ -25,7 +25,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to("/directors")
+    redirect_to "/directors"
   end
 
   def edit_form
@@ -44,14 +44,12 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to("/directors")
+    redirect_to "/directors"
   end
 
   def destroy
     @director = Director.find(params["id"])
-
-    @director.destroy
     
-    render("directors/destroy_row.html.erb")
+    render("directors/destroy.html.erb")
   end
 end

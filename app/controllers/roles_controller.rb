@@ -18,7 +18,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    redirect_to("/roles")
+    redirect_to "/roles"
   end
 
   def edit_form
@@ -34,12 +34,11 @@ class RolesController < ApplicationController
 
     @role.save
 
-    redirect_to("/roles")
+    redirect_to "/roles"
   end
 
   def destroy
     @role = Role.find(params["id"])
 
-    @role.destroy
   end
 end
