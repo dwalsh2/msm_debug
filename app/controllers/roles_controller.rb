@@ -18,7 +18,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    redirect_to "/roles/" + @role.id
+    redirect_to "/roles/#{@role.id}"
   end
 
   def edit_form
@@ -34,7 +34,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    redirect_to "/roles/" + @role.id
+    redirect_to "/roles/#{@role.id}"
   end
 
   def destroy

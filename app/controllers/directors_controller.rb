@@ -25,7 +25,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to "/directors/" + @director.id
+    redirect_to "/directors/#{@director.id}"
   end
 
   def edit_form
@@ -44,7 +44,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to "/directors/" + @director.id
+    redirect_to "/directors/#{@director.id}"
   end
 
   def destroy
