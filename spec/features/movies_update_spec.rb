@@ -28,8 +28,8 @@ feature "UPDATE:" do
   end
 
   scenario "EDIT FORM: movies#edit_form has prepopulated input fields", points: 1 do
-    movie = FactoryGirl.create(:movie)
     director = FactoryGirl.create(:director)
+    movie = FactoryGirl.create(:movie, director_id: director.id)
     movie_director = Director.find(movie.director_id)
 
     visit "/movies"
